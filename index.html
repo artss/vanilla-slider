@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+  <title>Slider</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="slider" id="slider1">
+    <div class="slider-item current"><img src="http://imgsv.imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_dx_18-140mmf_35-56g_ed_vr/img/sample/sample1_l.jpg" alt="1"></div>
+    <div class="slider-item"><img src="http://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" alt="2"></div>
+    <div class="slider-item"><img src="http://cdn.shane-matthews.com/easyPop/sampleImg/sample3.jpg" alt="3"></div>
+    <div class="slider-item"><img src="http://www.dailycameranews.com/wp-content/uploads/2013/03/Sony-A58-sample-photos.jpg" alt="4"></div>
+    <div class="slider-item"><img src="http://imgsv.imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_dx_18-300mmf_35-56g_ed_vr/img/sample/sample1_l.jpg" alt="5"></div>
+    <a class="slider-left-handle" href="#"></a>
+    <a class="slider-right-handle" href="#"></a>
+  </div>
+
+  <script src="js/slider.js"></script>
+  <script>
+    window.onload = function() {
+      _s = new Slider(document.getElementById('slider1'), true);
+    };
+  </script>
+</body>
+</html>
