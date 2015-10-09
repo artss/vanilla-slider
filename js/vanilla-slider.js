@@ -1,3 +1,5 @@
+/* global module */
+
 (function() {
   'use strict';
 
@@ -132,6 +134,14 @@
     return items[items.length - 1];
   };
 
-  window.Slider = Slider;
+  // Export
+
+  if (typeof window.define === 'function' && window.define.amd) {
+    define([], function() { return Slider; });
+  } else if (typeof module === 'object') {
+    module.exports = Slider;
+  } else {
+    window.Slider = Slider;
+  }
 })();
 

@@ -17,11 +17,12 @@
     <a class="slider-right-handle" href="#"></a>
   </div>
 
-  <script src="js/slider.js"></script>
+  <script src="bower_components/requirejs/require.js"></script>
   <script>
-    window.onload = function() {
-      _s = new Slider(document.getElementById('slider1'), true);
-    };
+    require.config({ baseUrl: 'js/' });
+    require(['slider'], function(Slider) {
+      new Slider(document.getElementById('slider1'), true);
+    });
   </script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+{
+  "name": "vanilla-slider",
+  "version": "0.0.1",
+  "homepage": "https://github.com/artss/vanilla-slider",
+  "authors": [
+    "Artem Sazhin <arts@psto.net>"
+  ],
+  "description": "Simple image slider written in pure JS/CSS",
+  "main": "js/slider.js",
+  "keywords": [
+    "slider"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
